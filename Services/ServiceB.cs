@@ -14,6 +14,7 @@ public class ServiceB: IServiceB
     {
         _logger = logger;
         _sp = sp;
+        _sp.GetService<IServiceA>();
     }
     
     public string GetServiceName()
